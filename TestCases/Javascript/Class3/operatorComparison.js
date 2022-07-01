@@ -5,21 +5,21 @@
  * /** */
 
  let num1 = 10
- let num2 = 20
+ let num2 = 10
 
  let num1GrEqNum2 = num1 >= num2; // GrEq = greater than or equal to ">="
 console.log(`${num1} >= ${num2} = ${num1GrEqNum2}`); // 
 
 let num1LeEqNum2 = num1 <= num2; // LeEq = less than or equal to "<="
-console.log(`${num1} >= ${num2} = ${num1LeEqNum2}`); // 
+console.log(`${num1} <= ${num2} = ${num1LeEqNum2}`); // 
 
 
 let num1GrNum2 = num1 > num2; // Gr = greater than ">"
-console.log(`${num1} >= ${num2} = ${num1GrNum2}`); // 
+console.log(`${num1} > ${num2} = ${num1GrNum2}`); // 
 
 
 let num1LeNum2 = num1 < num2; // Le = greater than "<"
-console.log(`${num1} >= ${num2} = ${num1LeNum2}`); // 
+console.log(`${num1} < ${num2} = ${num1LeNum2}`); // 
 
 /**
  * === : to compare if two values are equal (in value and same datatype)
