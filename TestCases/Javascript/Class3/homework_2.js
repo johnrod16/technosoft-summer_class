@@ -60,3 +60,6 @@ console.log(`\nsentence3_LastCharacter -> ${sentence3_LastCharacter}`);
  // 6. word 'Body' is present only once. (true or false)
  let sentence3_BodyOnlyOnce = sentence3.indexOf('bOdY') === sentence3.lastIndexOf('bOdY');
  console.log(`\nsentence3_BodyOnlyOnce -> ${sentence3_BodyOnlyOnce}`);
+
+
+ 
