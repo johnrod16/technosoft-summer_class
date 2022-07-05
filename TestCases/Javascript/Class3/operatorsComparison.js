@@ -31,6 +31,8 @@ console.log(`${num1} < ${num2} = ${num1LeNum2}`); //
 
 let num1EqNum2 = num1 === num2;
 console.log(`\n${num1} === ${num2} = ${num1EqNum2}`);
+let num1EqNum2_ValueOnly = num1 == num2;
+console.log(`\n${num1} == ${num2} = ${num1EqNum2}`);
 
 
 /**
