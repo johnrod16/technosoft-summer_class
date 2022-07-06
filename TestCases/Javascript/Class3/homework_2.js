@@ -61,5 +61,5 @@ console.log(`\nsentence3_LastCharacter -> ${sentence3_LastCharacter}`);
  let sentence3_BodyOnlyOnce = sentence3.indexOf('bOdY') === sentence3.lastIndexOf('bOdY');
  console.log(`\nsentence3_BodyOnlyOnce -> ${sentence3_BodyOnlyOnce}`);
 
-
+//new comment
  
