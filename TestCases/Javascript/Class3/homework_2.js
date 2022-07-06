@@ -38,17 +38,17 @@ console.log(`\nsentence3_Length -> ${sentence3_Length}`);
 
 
  // 2. does sentence-3 starts with 'health' (ignore cases)
-let sentence3_Beginning = sentence3.startsWith('health');
+let sentence3_Beginning = sentence3.toLowerCase().startsWith('health');
 console.log(`\nsentence3_Beginning -> ${sentence3_Beginning}`);
 
 
  // 3. does sentence-3 contains with 'Body' (ignore cases)
-let sentence3_BodyIncluded = sentence3.includes('body');
+let sentence3_BodyIncluded = sentence3.toLowerCase().includes('body');
 console.log(`\nsentence3_Body -> ${sentence3_BodyIncluded}`);
 
 
  // 4. index of 'Body' in sentence3  (ignore cases)
-let sentence3_BodyIndex = sentence3.indexOf('body');
+let sentence3_BodyIndex = sentence3.toLowerCase().indexOf('body');
 console.log(`\nsentence3_BodyIndex -> ${sentence3_BodyIndex}`);
 
 
@@ -61,5 +61,6 @@ console.log(`\nsentence3_LastCharacter -> ${sentence3_LastCharacter}`);
  let sentence3_BodyOnlyOnce = sentence3.indexOf('bOdY') === sentence3.lastIndexOf('bOdY');
  console.log(`\nsentence3_BodyOnlyOnce -> ${sentence3_BodyOnlyOnce}`);
 
-//new comment
+
+
  
