@@ -11,7 +11,7 @@ console.log(`\n${sentence1}`);
 //check greater than 10
 //if true  then -> result1 = 15
 //else
-//result1 = 25 (Termary)
+//result1 = 25 (Ternary)
 let result1 = sentence1.length >= 10 ? 15 : 25;
 console.log(`result1 -> ${result1}`);
 
@@ -58,7 +58,9 @@ console.log(`\nsentence3_LastCharacter -> ${sentence3_LastCharacter}`);
 
 
  // 6. word 'Body' is present only once. (true or false)
- let sentence3_BodyOnlyOnce = sentence3.indexOf('bOdY') === sentence3.lastIndexOf('bOdY');
+
+ let lowerCaseSentence3 = sentence3.toLowerCase()
+ let sentence3_BodyOnlyOnce = sentence3.indexOf('Body') === sentence3.lastIndexOf('Body') 
  console.log(`\nsentence3_BodyOnlyOnce -> ${sentence3_BodyOnlyOnce}`);
 
 
