@@ -59,9 +59,17 @@ console.log(`\nsentence3_LastCharacter -> ${sentence3_LastCharacter}`);
 
  // 6. word 'Body' is present only once. (true or false)
 
- let lowerCaseSentence3 = sentence3.toLowerCase()
+ let lowerCaseSentence3 = sentence3.toLowerCase();
  let sentence3_BodyOnlyOnce = sentence3.indexOf('Body') === sentence3.lastIndexOf('Body') 
  console.log(`\nsentence3_BodyOnlyOnce -> ${sentence3_BodyOnlyOnce}`);
+
+// other way to write ***BETTER WAY***
+
+let lowerCaseSentence4 = sentence3.toLowerCase();
+let indexOf_body = lowerCaseSentence4.indexOf('body');
+let lastIndexOf_body = lowerCaseSentence4.lastIndexOf('body');
+let result10 = indexOf_body === lastIndexOf_body && indexOf_body >= 0;
+console.log(`sentence-3 body is only once -> ${result10}`);
 
 
 
