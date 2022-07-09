@@ -4,9 +4,15 @@
  * 
  */
 let countryName_String = 'USA USA';
- let countryName = ['USA', 'USA'];
- console.log(`\n${countryName_String.length}`);
+console.log(`\n${countryName_String.length}`);
+
+let countryName = ['USA', 'USA'];
  console.log(`\n${countryName.length}`);
+
+let countryNameToArray = countryName_String.split('');
+console.log(countryNameToArray);
+console.log(countryNameToArray.length);
+console.log(countryNameToArray.length -1);
 
 
 
@@ -21,8 +27,8 @@ let countryName_String = 'USA USA';
  
  let sentenceToArray = sentence.split(' ');
  console.log(`\n${sentenceToArray}`);
- sentenceToArray.length
- console.log(`\n${sentenceToArray.length -1}`);
+ sentenceToArray.length;
+ console.log(`\n${sentenceToArray.length}`);
 
  
 
@@ -52,8 +58,32 @@ let allOtherLetters3 = sentence1.substring(14); // ay
 let refinedWord = firstLetterUppercase.concat(allOtherLetters); 
 let refinedWord2 = firstLetterUppercase2.concat(allOtherLetters2);
 let refinedWord3 = firstLetterUppercase3.concat(allOtherLetters3);
-
+ 
 console.log(`\n\nOriginal sentence was "${sentence1}" and now is "${refinedWord} ${firstLetterUppercase1} ${refinedWord2} ${refinedWord3}."\n\n`);
+
+
+//'YOu lIVe ONlY ONcE' ->  'You Live Only Once'
+
+let sentence2 = 'YOu lIVe ONlY ONcE'
+let firstLetterUppercase5 = sentence2.substring(0, 1).toUpperCase(); // Y
+let firstLetterUppercase6 = sentence2.substring(4, 5).toUpperCase(); // L
+let firstLetterUppercase7 = sentence2.substring(9, 10).toUpperCase(); // O
+let firstLetterUppercase8 = sentence2.substring(14, 15).toUpperCase(); // O
+
+let allOtherLetters5 = sentence2.substring(1, 3).toLowerCase(); // ou
+let allOtherLetters6 = sentence2.substring(5, 8).toLowerCase(); // ive
+let allOtherLetters7 = sentence2.substring(10, 14).toLowerCase(); // nly
+let allOtherLetters8 = sentence2.substring(15, 18).toLowerCase(); // nce
+
+//merge all substrings
+let refinedWord4 = firstLetterUppercase5.concat(allOtherLetters5);
+let refinedWord5 = firstLetterUppercase6.concat(allOtherLetters6);
+let refinedWord6 = firstLetterUppercase7.concat(allOtherLetters7);
+let refinedWord7 = firstLetterUppercase8.concat(allOtherLetters8);
+
+console.log(`\n\nOriginal sentence was "${sentence2}" and now is "${refinedWord4} ${refinedWord5} ${refinedWord6}${refinedWord7}."\n\n`);
+
+
 
 
 /**
