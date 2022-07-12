@@ -139,11 +139,61 @@ let firstLetterWalk4 = stmt3.substring(15, 16).toUpperCase();     // A
 
 console.log(`\n${stmt3}`);
 console.log(stmt3Uppercase);
-console.log(`${firstLetterWalk1}${firstLetterWalk2}${firstLetterWalk3}${firstLetterWalk4}`);
+console.log(`${firstLetterWalk1}${firstLetterWalk2}${firstLetterWalk3}${firstLetterWalk4}\n`);
 
 
+// const stmt1 = 'have a great day';            //->  'HAGD'
+// const stmt2 = 'YOu ONlY lIVe ONcE';          //->  'YOLO'
+// const stmt3 = 'yOu neVER WaLK alOne';        //->  'YNWA'
 
+//*** BETTER WAY TO WRITE *** /
 
+// split string into array
+// uppercase index value of the first letter and lowercase index value of rest of that value in the array
+// log to re-join the new array
 
+let words = stmt1.split(' ');
+console.log(words);
 
+let word1 = words[0].substring(0, 1).toUpperCase() + words[0].substring(1).toLowerCase();
+let word2 = words[1].substring(0, 1).toUpperCase();
+let word3 = words[2].substring(0, 1).toUpperCase() + words[2].substring(1).toLowerCase();
+let word4 = words[3].substring(0, 1).toUpperCase() + words[3].substring(1).toLowerCase();
 
+console.log(`${word1} ${word2} ${word3} ${word4}\n`);
+
+//
+
+let words5 = stmt2.split(' ');
+console.log(words5);
+
+let word6 = words5[0].substring(0, 1).toUpperCase() + words5[0].substring(1).toLowerCase();
+let word7 = words5[1].substring(0, 1).toUpperCase() + words5[1].substring(1).toLowerCase();
+let word8 = words5[2].substring(0, 1).toUpperCase() + words5[2].substring(1).toLowerCase();
+let word9 = words5[3].substring(0, 1).toUpperCase() + words5[3].substring(1).toLowerCase();
+
+console.log(`${word6} ${word7} ${word8} ${word9}\n`);
+
+//
+
+let words10 = stmt3.split(' ');
+console.log(words10);
+
+let word11 = words10[0].substring(0, 1).toUpperCase() + words10[0].substring(1).toLowerCase();
+let word12 = words10[1].substring(0, 1).toUpperCase() + words10[1].substring(1).toLowerCase();
+let word13 = words10[2].substring(0, 1).toUpperCase() + words10[2].substring(1).toLowerCase();
+let word14 = words10[3].substring(0, 1).toUpperCase() + words10[3].substring(1).toLowerCase();
+
+console.log(`${word11} ${word12} ${word13} ${word14}\n`);
+
+// with just the 1st letter from each array just dropp the "+" of the variable
+
+let words15 = stmt3.split(' ');
+console.log(words15);
+
+let word16 = words10[0].substring(0, 1).toUpperCase();
+let word17 = words10[1].substring(0, 1).toUpperCase();
+let word18 = words10[2].substring(0, 1).toUpperCase();
+let word19 = words10[3].substring(0, 1).toUpperCase();
+
+console.log(`${word16}${word17}${word18}${word19}`);
