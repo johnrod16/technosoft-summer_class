@@ -6,7 +6,7 @@
  * 
  * Grade-A : 91-100% 
  * Grade-B : 81-90.99% 
- * Grade-c : 71-80.99%
+ * Grade-C : 71-80.99%
  * Grade-D : 61-70.99%
  * Grade-E : 51-60.99%
  * Grade-F : less than 51%
@@ -18,6 +18,34 @@
  * 
  * Grade -> C
  */
+
+const maxScore = 50;
+const studentScore = 45;
+let percentage = (studentScore/maxScore)*100;
+
+if (percentage >= 91 && percentage <= 100){
+    console.log(`\n${percentage}`);
+    console.log('Grade=A\n');
+}else if (percentage >= 81 && percentage <= 90.99){
+    console.log(`\n${percentage}`);
+    console.log('Grade=B\n');
+}else if (percentage >= 71 && percentage <= 80.99){
+    console.log(`\n${percentage}`);
+    console.log('Grade=C\n');
+}else if (percentage >= 61 && percentage <= 70.99){
+    console.log(`\n${percentage}`);
+    console.log('Grade=D\n');
+}else if (percentage >= 51 && percentage <= 60.99){
+    console.log(`\n${percentage}`);
+    console.log('Grade=E\n');
+}else if (percentage < 51 && percentage > 0){
+    console.log(`\n${percentage}`);
+    console.log('Grade=F\n');
+}else 
+    console.log('\nInvalid student score\n');
+
+
+
 
 /**
  * Create a variable and store any value in it.
@@ -32,6 +60,20 @@
  * 
  */
 
+
+let myNumber = 9;
+
+if (myNumber%5 === 0 && myNumber%3 === 0) {
+    console.log(`Number ${myNumber} is divisible by 5 and 3\n`);
+} else if (myNumber%3 === 0) {
+    console.log(`Number ${myNumber} is divisible by 3\n`);
+} else if (myNumber%5 === 0) {
+    console.log(`Number ${myNumber} is divisible by 5\n`);
+} else {
+    console.log(`Number ${myNumber} is NOT divisible by 5 and 3\n`);
+}
+
+
 /**
  * let planets = ['Earth', 'Mercury', 'Jupiter', 'Saturn', 'Mars', "Venus", 'Pluto'];
  * 
@@ -41,13 +83,33 @@
  */
 
 
+let planets = ['Mercury', 'Jupiter', 'Saturn', 'Mars', 'Venus', 'Pluto'];
+
+if (planets[0] === 'Earth'){
+    console.log(`Earth is mentioned in expected index\n`);
+} else {planets.unshift('Earth');
+    console.log(`${planets}\n`);
+}
+
+
+
 /**
  * const sports = ['Football', 'Soccer', 'BASKETBALL', 'Baseball', 'Rugby'];
  * 
- * if BASKETBALL is present not in index-2, print "BASKETBALL is mentioned in the sports array"
+ * if BASKETBALL is present in index-2, but present at any other index then print "BASKETBALL is mentioned in the sports array"
  * if BASKETBALL is present in index-2, print "BASKETBALL is present at index-2"
  * if BASKETBALL is NOT present in the array, replace index-2 value with BASKETBALL and print the value which you replaced.
  * 
  */
+const sports = ['Football', 'Soccer', 'Baseball', 'Rugby'];
+
+if (sports[2] === 'BASKETBALL') {
+    console.log('BASKETBALL is present at index-2');
+}
+else if (sports.includes('BASKETBALL')) {
+    console.log('BASKETBALL is mentioned in the sports array');
+}
+    else (sports.splice(2, 0, 'basketball'))
+    console.log(sports);
 
 

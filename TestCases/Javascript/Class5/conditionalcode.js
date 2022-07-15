@@ -78,9 +78,9 @@ switch (myName.toLowerCase()) {
 
  */
 
-//make everything lower case and use || (or function)
+//make everything lower case
 
-let day = 'Tomorrow';
+let day = 'FrIdAy';
 switch (day.toLowerCase()) {
     case 'mon':
     case 'monday':
@@ -94,7 +94,7 @@ switch (day.toLowerCase()) {
     case 'tuesday':
     case 'thur':
     case 'thursday':
-        console.log('\nToday is self lerning day\n');
+        console.log('\nToday is self learning day\n');
         break;
     case 'sat':
     case 'saturday':
@@ -339,7 +339,7 @@ if (num === 2) {
  * switch-block
  * 
  * 1. all conditions are related to only ONE variable
- * 2. all conditions are comparing equals
+ * 2. all conditions are comparing equals (=) (meaning only 1 value, not </> multiple values)
  * 3. for every block, we must have only one condition
  * 
  * Syntax:
@@ -468,7 +468,7 @@ if (AfterUpperDayName.localeCompare('MON') === 0) {
     console.log('That is not a valid day of the week')
 }
 
-let myDay = 'MONDAY'
+let myDay = ' '
 switch(myDay.toLowerCase()) {
     case 'mon':
     case 'monday':

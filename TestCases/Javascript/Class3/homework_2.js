@@ -31,36 +31,37 @@ console.log(sentence_ReplaceWithAlpha);
 
 
 const sentence3 = "HeAlTh wAs EArlIer said To Be the AbILitY of the bOdY funcTiOnInG WElL.";
+let sentence3LowerCase = sentence3.toLowerCase();
 
  // 1. the length of sentence-3
-let sentence3_Length = sentence3.length;
+let sentence3_Length = sentence3LowerCase.length;
 console.log(`\nsentence3_Length -> ${sentence3_Length}`);
 
 
  // 2. does sentence-3 starts with 'health' (ignore cases)
-let sentence3_Beginning = sentence3.toLowerCase().startsWith('health');
+let sentence3_Beginning = sentence3LowerCase.toLowerCase().startsWith('health');
 console.log(`\nsentence3_Beginning -> ${sentence3_Beginning}`);
 
 
  // 3. does sentence-3 contains with 'Body' (ignore cases)
-let sentence3_BodyIncluded = sentence3.toLowerCase().includes('body');
+let sentence3_BodyIncluded = sentence3LowerCase.toLowerCase().includes('body');
 console.log(`\nsentence3_Body -> ${sentence3_BodyIncluded}`);
 
 
  // 4. index of 'Body' in sentence3  (ignore cases)
-let sentence3_BodyIndex = sentence3.toLowerCase().indexOf('body');
+let sentence3_BodyIndex = sentence3LowerCase.toLowerCase().indexOf('body');
 console.log(`\nsentence3_BodyIndex -> ${sentence3_BodyIndex}`);
 
 
  // 5. the last-character in sentence-3
-let sentence3_LastCharacter = sentence3.charAt(sentence3.length -1);
+let sentence3_LastCharacter = sentence3LowerCase.charAt(sentence3LowerCase.length -1);
 console.log(`\nsentence3_LastCharacter -> ${sentence3_LastCharacter}`);
 
 
  // 6. word 'Body' is present only once. (true or false)
 
  let lowerCaseSentence3 = sentence3.toLowerCase();
- let sentence3_BodyOnlyOnce = sentence3.indexOf('Body') === sentence3.lastIndexOf('Body') 
+ let sentence3_BodyOnlyOnce = sentence3LowerCase.indexOf('Body') === sentence3LowerCase.lastIndexOf('Body') 
  console.log(`\nsentence3_BodyOnlyOnce -> ${sentence3_BodyOnlyOnce}`);
 
 // other way to write ***BETTER WAY***
