@@ -112,4 +112,15 @@ else if (sports.includes('BASKETBALL')) {
     else (sports.splice(2, 0, 'basketball'))
     console.log(sports);
 
+// ********* BETTER WAY TO WRITE **********
 
+
+    const sports2 = ['Football', 'Soccer', 'BASKETBALL', 'Baseball', 'Rugby'];
+    let basketballLowerCase = 'Basketball'.toLowerCase();
+    for (let mySports = 0; mySports <= sports2.length-1; mySports++) {
+        let sportInLowerCase = sports[mySports].toLowerCase();
+        if (sportInLowerCase.localeCompare(basketballLowerCase) === 0) {
+           console.log('Basketball is present in the array');
+           break;
+        }
+    }
