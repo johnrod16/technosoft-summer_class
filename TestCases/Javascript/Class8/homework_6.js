@@ -11,6 +11,22 @@
  * 
  */
 
+
+ const sentence = 'have a great day bEcause iT is nICE out';
+
+ function titleCase(sentence) {
+    sentenceTitle = sentence.toLowerCase().split(' ');
+    let abbr = ' ';
+ for (let i=0 ; i <= sentenceTitle.length-1 ; i++) {
+    abbr = abbr + sentenceTitle[i].substring(0,1).toUpperCase() + sentenceTitle[i].slice(1) + ' ';
+   } return (abbr);
+ }
+ console.log('\nQuestion 1 answer:');
+ console.log(titleCase(sentence));
+
+
+
+
 /**
  * Q2:
  * Create a function to reverse a String (word by word)
@@ -22,6 +38,17 @@
  * 
  */
 
+ const newSentence = 'hello dear how are you doing';
+ 
+ function sentenceReverse(sentence) {
+    let sentenceReverse = sentence.split(' ').reverse();
+ for (let i=0 ; i <= sentence.length-1 ; i++){
+} return(sentenceReverse.toString().replaceAll(',', ' '));
+}
+ console.log('\nQuestion 2 answer:');
+ console.log(sentenceReverse(newSentence));
+
+
 /**
  * Q3:
  * Create a function to find the total of numbers in the array
@@ -30,6 +57,20 @@
  * [1, 1, 1, 2, 3, 1, 2] -> 11
  * [1, -1] -> 0
  */
+
+ const numbers = [1, 2, 3, 4, 5];
+ function totalNumbers(numbers) {
+    let totalNumbers = 0;
+ for (let i=0 ; i<=numbers.length-1 ; i++) {
+    totalNumbers = numbers[i] + totalNumbers; 
+} return (totalNumbers);
+}
+console.log('\nQuestion 3 answer:');
+console.log(totalNumbers(numbers));
+
+
+
+
 
 /**
  * Q4:
@@ -45,12 +86,11 @@
 
 const numbers2 = [1, 1, 1, 2, 3, 1, 2] 
 
- function averageCalc(numbers1) {
-    let totalNumbers1 = 0
- for (let i=0 ; i<=numbers1.length-1 ; i++) {
-     totalNumbers1 = numbers1[i] + totalNumbers1; 
+ function averageCalc(numbers) {
+    let totalNumbers = 0;
+ for (let i=0 ; i<=numbers.length-1 ; i++) {
+    totalNumbers = numbers[i] + totalNumbers; 
+ }  return(totalNumbers / numbers.length); 
  }
- return(totalNumbers1 / numbers1.length); 
-}
-
-console.log(averageCalc(numbers2))
+ console.log('\nQuestion 4 answer:');
+ console.log(averageCalc(numbers2));
