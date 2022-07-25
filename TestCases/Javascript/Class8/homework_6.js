@@ -68,7 +68,16 @@
 console.log('\nQuestion 3 answer:');
 console.log(totalNumbers(numbers));
 
+// ******* using forEach ********
 
+function arrayTotal(inputArray) {
+    let total = 0;
+    inputArray.forEach(function (value) {
+        total = total + value;
+    }) 
+//console.log(total);
+    return total;
+} console.log(arrayTotal(numbers));
 
 
 
@@ -84,7 +93,7 @@ console.log(totalNumbers(numbers));
  */
 
 
-const numbers2 = [1, 1, 1, 2, 3, 1, 2] 
+const numbers2 = [1, 1, 14, 2, 366, 1643, 2] 
 
  function averageCalc(numbers) {
     let totalNumbers = 0;
@@ -94,3 +103,20 @@ const numbers2 = [1, 1, 1, 2, 3, 1, 2]
  }
  console.log('\nQuestion 4 answer:');
  console.log(averageCalc(numbers2));
+
+// ****** using forEach loop ******
+
+function arrayAvg(inputArray) {
+    let total = 0;
+    inputArray.forEach(function (value) {
+        total = total + value;
+    }) 
+//this already forEach loop from question 3 will find the total;
+    return total/inputArray.length;
+} 
+console.log(arrayAvg(numbers));
+
+
+
+
+
