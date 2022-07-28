@@ -8,5 +8,3 @@ class MyMathFunctions {
 
 }
 module.exports = MyMathFunctions;
-
-
