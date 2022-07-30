@@ -46,7 +46,7 @@ class Teachers extends Members {
      * 
      */
     //hiring(teacherName, teacherAge, teacherCountry, teacherCourseName) {
-        constructor(teacherName, teacherAge, teacherCountry, teacherCourse) {
+        constructor(teacherName, teacherAge, teacherCountry, teacherCourse, teacherSalary) {
             super();
             if (teacherAge >= 21 && this.#isCourseNameValid(teacherCourse) && teacherCountry.toLowerCase().localeCompare('usa') === 0 ) {
                 const courseData = this.#isCourseNameValid(teacherCourse);
@@ -55,8 +55,9 @@ class Teachers extends Members {
                 this.member.location = teacherCountry.toUpperCase();
                 this.teacher.tCourseDetails.courseName = courseData.courseName;
                 this.teacher.tCourseDetails.courseLength = courseData.length;
+                this.teacher.tSalary = teacherSalary
                 this.teacher.tId = ++Teachers.idValue;
-                console.log(`\nThank you for enrolling.\nYour id value is ${this.teacher.tId}\n`);
+                console.log(`\nThank you TEACHER for enrolling.\nYour id value is ${this.teacher.tId}\n`);
             } else {
                 console.log("\nDO NOT ENROLL");
             }

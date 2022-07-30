@@ -1,7 +1,7 @@
 const Students = require('./Students');
 const Teachers = require('./teachers');
 
-const t1 = new Teachers('ryaN', 32, 'uSa', 'qa');
+const t1 = new Teachers('ryaN', 32, 'uSa', 'qa', 10000);
 const s1 = new Students('jOHn', 20, 'USA', 'mobile');
 /*
     idValue = 0

@@ -62,7 +62,7 @@ class Students extends Members {
             this.#student.sCourseDetails.courseLength = courseData.length;
             this.#student.sBalance = courseData.price;
             this.#student.sId = ++Students.#idValue;
-            console.log(`\nThank you for enrolling.\nYour id value is ${this.#student.sId}\n`);
+            console.log(`\nThank you STUDENT for enrolling.\nYour id value is ${this.#student.sId}\n`);
         } else {
             console.log("\nDO NOT ENROLL");
         }
@@ -149,7 +149,7 @@ class Students extends Members {
      */
 
         makePayment (amount) {
-            let amount = 0
+            //let amount = 0
                 if (amount > 0 && this.#student.sPayment <= sBalance) {
                     console.log(`\nThank you for making payment of ${sPayment}`);
                   return this.#student.sBalance
